@@ -27,7 +27,7 @@ Follow these steps to register the kafka docker instance with the manager.
  - Save!
 
 ## Eventstore
-Docker compose electrodes single instance container.
+Docker compose eventstore's single instance container.
 
 ### Run platform
 ```sh
