@@ -1,0 +1,17 @@
+kafka-zookeeper:
+  image: spotify/kafka
+  ports:
+   - "2181:2181"
+   - "2888:2888"
+   - "3888:3888"
+   - "5000:5000"
+   - "9092:9092"
+
+kafka-manager:
+  image: dockerkafka/kafka-manager
+  environment:
+    - ZK_HOSTS=kafka-zookeeper:2181
+  ports:
+    - "9000:9000"
+  links:
+    - kafka-zookeeper:zookeeper
