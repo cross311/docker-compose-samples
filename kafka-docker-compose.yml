@@ -10,7 +10,7 @@ kafka-zookeeper:
 kafka-manager:
   image: dockerkafka/kafka-manager
   environment:
-    - ZK_HOSTS=kafka-zookeeper:2181
+    - ZK_HOSTS=zookeeper:2181
   ports:
     - "9000:9000"
   links:
