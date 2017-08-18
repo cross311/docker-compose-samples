@@ -1,6 +1,11 @@
 # docker-compose-samples
 Collection of docker compose yml files to help test cool technology
 
+## Required
+
+- Docker for [your platform]
+- wget
+
 ## Kafka
 Docker compose spotify's single container for both zookeeper and kafka, auto configured.
 additionally running kafka-manager from `dockerkafka`
