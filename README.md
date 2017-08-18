@@ -6,5 +6,5 @@ Docker compose spotify's single container for both zookeeper and kafka, auto con
 additionally running kafka-manager from `dockerkafka`
 
 ```sh
-wget -q -O - https://raw.githubusercontent.com/DockerKafka/docker-compose-samples/master/kafka-zookeeper-docker-compose.yml | docker-compose -f - -p expressUp up -d
+wget -q -O - https://raw.githubusercontent.com/cross311/docker-compose-samples/master/kafka-docker-compose.yml | docker-compose -f - -p expressUp up -d
 ```
