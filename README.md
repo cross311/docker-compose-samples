@@ -25,3 +25,16 @@ Follow these steps to register the kafka docker instance with the manager.
  - kafka version: `0.8.2.1`
  - Spotify's version does not support JMX :(
  - Save!
+
+## Eventstore
+Docker compose electrodes single instance container.
+
+### Run platform
+```sh
+wget -q -O - https://raw.githubusercontent.com/cross311/docker-compose-samples/master/eventstore-docker-compose.yml | docker-compose -f - -p expressUp up -d
+```
+
+### Login
+- `http://localhost:2113`
+- username: `admin`
+- password: `changeit`
